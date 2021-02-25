@@ -38,9 +38,7 @@ let meaning = function checkNumMeaning(variable, info) {
     } while (!variable || variable.includes(+variable));
     return variable;
   };
-
-//присвоение значений переменным
-  
+ 
  let appData = {
      income:{},
      addIncome:[],
@@ -185,19 +183,12 @@ function submit(param, event) {
     });
   } 
 
-start.addEventListener('click', appData.start);
-
 oneButton.addEventListener('click', appData.addIncomeBlock);
 
 twoButton.addEventListener('click', appData.addExpensesBlock);
 
 submit(salaryAmount, 'change');
 
- /*console.log('Расходы за месяц: ' + appData.expensesMonth);
-
- for (let key in appData) {
-     console.log("Наша программа включает в себя данные:" + key + " :" + appData[key]);
- }*/
  function arrToString(){
     let arr = appData.addExpenses;
     let str = '';
